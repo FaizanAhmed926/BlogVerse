@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Our Color Palette */
+:root {
+  --bg-dark: #0f172a;      /* Dark background */
+  --bg-card: #1e293b;      /* Card background */
+  --accent-primary: #3b82f6; /* Blue - Primary */
+  --accent-secondary: #10b981; /* Green - Success */
+  --accent-danger: #ef4444;   /* Red - Danger */
+  --text-primary: #f8fafc;   /* White text */
+  --text-secondary: #cbd5e1; /* Gray text */
+}
+/* YouTube-style loading bar */
+@keyframes youtube-loading {
+  0% { transform: scaleX(0); }
+  50% { transform: scaleX(1); }
+  100% { transform: scaleX(0) translateX(100%); }
+}
+
+.youtube-loader {
+  animation: youtube-loading 1.5s ease-in-out infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
