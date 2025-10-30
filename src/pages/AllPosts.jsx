@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useState, useEffect} from 'react'
 import { Container, PostCard } from '../components/index.js'
 import appwriteService from "../appwrite/config.js";
 
@@ -32,11 +32,11 @@ function AllPosts() {
             <div className="w-full py-8">
                 <Container>
                     <div className="min-h-screen flex items-center justify-center">
-                        <div className="text-center">
-                            <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-                            <p className="text-slate-400">Loading your stories...</p>
-                        </div>
-                    </div>
+                <div className="text-center">
+                    <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                    <p className="text-slate-400">Loading your stories...</p>
+                </div>
+            </div>
                 </Container>
             </div>
         )

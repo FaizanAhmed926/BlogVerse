@@ -4,7 +4,7 @@ import { Controller } from 'react-hook-form';
 import conf from '../conf/conf';
 
 export default function RTE({ name, control, label, defaultValue = "" }) {
-  const apiKey = conf.apiKey; // Add your API key to .env file
+  const apiKey = conf.apiKey; 
 
   return (
     <div className='w-full'> 
